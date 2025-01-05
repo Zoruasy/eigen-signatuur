@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website showcasing interests, favorite Pokémon, and a fun pixelated game.">
+    <title>Pixelated Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Eigen Signatuur</h1>
+        <!-- Navigatiebalk -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page1.html">Manieren van aanpak</a></li>
+                <li><a href="page2.html">Reflecteren</a></li>
+                <li><a href="page3.html">Meeste affiniteit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Afbeeldingen Links met Tekst -->
+    <div class="image-links">
+        <a href="page1.html" class="image-link">
+            <img src="images/dragon.png" alt="Afbeelding 1">
+         
+        </a>
+        <a href="page2.html" class="image-link">
+            <img src="images/pokemon.png" alt="Afbeelding 2">
+           
+        </a>
+        <a href="page3.html" class="image-link">
+            <img src="images/gym.png" alt="Afbeelding 3">
+           
+        </a>
+    </div>
+
+    <!-- Section for Favorite Pokémon -->
+    <section class="favorites-section">
+        <h2>Favoriete Pokémon</h2>
+        <div class="gif-container">
+            <img src="gifs/zorua.gif" alt="Pokémon 1">
+            <img src="gifs/ampharos.gif" alt="Pokémon 2">
+            <img src="gifs/bulbasaur1.gif" alt="Pokémon 3">
+            <img src="gifs/gengar.gif" alt="Pokémon 4">
+        </div>
+    </section>
+
+    <!-- Game Section -->
+    <section class="game-section">
+        <h2>Goblin: Click the Image</h2>
+        <p>Ik hou van games spelen, en daarom heb ik deze kleine JavaScript-game gemaakt! Klik op de afbeelding om te spelen en je score te verhogen.</p>
+        
+        <div class="game-container">
+            <img id="game-box" class="game-box" src="images/goblin.png" alt="Klikbare Afbeelding">
+        </div>
+        <p>Score: <span id="score">0</span></p>
+    </section>
+
+    <footer>
+        <p>Britney Krabbendam</p>
+    </footer>
+
+    <script src="js/game.js"></script>
+</body>
+</html>

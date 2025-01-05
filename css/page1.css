@@ -1,0 +1,123 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #F6F5F2; /* Zacht beige-achtige achtergrond */
+    color: #8b5c45; /* Bruine tekstkleur */
+    line-height: 1.6;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header {
+    background-color: #F0EBE3; /* Lichte crème kleur voor de header */
+    padding: 50px 20px;
+    border-bottom: 4px solid #8b5c45; /* Bruine rand onder de header */
+    text-shadow: 2px 2px 8px rgba(139, 92, 69, 0.6); /* Schaduw voor tekst */
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: rgba(243, 208, 215, 0.9); /* Semi-transparante roze voor de navigatie */
+    padding: 15px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Lichte schaduw voor de navigatie */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #8b5c45; /* Bruine kleur voor de links */
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #FFEFEF; /* Zeer lichte roze kleur bij hover */
+    color: white;
+    transform: translateY(-3px); /* Lichte beweging naar boven */
+}
+
+/* Section Styling */
+section {
+    margin: 40px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    background-color: #F3D0D7; /* Zachte roze kleur voor de inhoud */
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(139, 92, 69, 0.2); /* Subtiele schaduw voor secties */
+    text-align: left;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #8b5c45; /* Bruine kleur voor sectiekoppen */
+    text-shadow: 1px 1px 4px rgba(139, 92, 69, 0.6);
+}
+
+section p {
+    margin-bottom: 15px;
+    color: #6a4c62; /* Zachte contrastkleur (dof paarsachtig bruin) */
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    color: #4e3629; /* Donkerder bruin voor lijstitems */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #F0EBE3; /* Zelfde kleur als header */
+    color: #8b5c45;
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid #8b5c45;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stapel de navigatielinks verticaal op kleinere schermen */
+        gap: 10px;
+    }
+
+    section {
+        width: 95%; /* Vergroot de secties op kleinere schermen */
+        padding: 15px;
+    }
+}
+

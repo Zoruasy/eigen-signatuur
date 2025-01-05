@@ -1,0 +1,284 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Body Styling */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #F6F5F2; /* Zacht beige-achtige achtergrond */
+    color: #8b5c45; /* Bruine tekstkleur */
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling met achtergrondafbeelding */
+header {
+    background-image: url(../images/background.png); /* Plaats hier je afbeeldingspad */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    border-bottom: 4px solid #8b5c45; /* Bruine rand onder de header */
+    box-shadow: 0 4px 8px rgba(139, 92, 69, 0.1);
+    text-shadow: 2px 2px 8px rgba(139, 92, 69, 0.6);
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: rgba(243, 208, 215, 0.9); /* Semi-transparante roze tint voor de navigatiebalk */
+    padding: 12px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #8b5c45; /* Bruine kleur voor de links */
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #FFEFEF; /* Zeer lichte roze kleur bij hover */
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Content Section */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-grow: 1;
+    background-color: #F3D0D7; /* Zachte roze kleur voor inhoud */
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #8b5c45; /* Bruine kleur voor sectiekoppen */
+}
+
+section p {
+    font-size: 1.1rem;
+    margin: 20px 0;
+}
+
+/* Image Links */
+.image-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.image-links a {
+    position: relative;
+    margin: 0;
+}
+
+.image-links img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border: 4px solid #8b5c45;
+    box-shadow: 0 8px 15px rgba(139, 92, 69, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+}
+
+.image-links img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(139, 92, 69, 0.5);
+}
+
+/* Overlay text on images */
+.image-links .image-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(139, 92, 69, 0.8);
+    color: white;
+    padding: 12px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #F0EBE3; /* Zelfde als header */
+    color: #8b5c45;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Pixelated Game Styling */
+.game-section {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #F6F5F2;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.game-section h2 {
+    font-size: 2.5rem;
+    color: #8b5c45;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.game-section p {
+    font-size: 1.3rem;
+    color: #8b5c45;
+    margin-bottom: 30px;
+}
+
+/* Game Container */
+.game-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px solid #8b5c45;
+    background-color: #F6F5F2;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Game Box */
+.game-box {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+    image-rendering: pixelated;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-box:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(139, 92, 69, 0.5);
+}
+
+/* Score Styling */
+#score {
+    font-size: 1.5rem;
+    color: #8b5c45;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgba(243, 208, 215, 0.8);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Nieuwe sectie: Favoriete Pokémon */
+.favorites-section {
+    background-color: #F7C8D4; /* Roze achtergrondkleur voor de favoriete Pokémon sectie */
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.favorites-section h2 {
+    font-size: 2.5rem;
+    color: #8b5c45; /* Bruine kleur voor de koptekst */
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(139, 92, 69, 0.7);
+}
+
+.favorites-section .gif-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Toegevoegd voor betere weergave op kleinere schermen */
+}
+
+.favorites-section .gif-container img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 4px solid #8b5c45;
+    box-shadow: 0 8px 15px rgba(139, 92, 69, 0.3);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.favorites-section .gif-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(139, 92, 69, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        width: 95%;
+        padding: 15px;
+    }
+
+    /* Verklein de tekst voor kleinere schermen */
+    body {
+        font-size: 0.9rem;
+    }
+}

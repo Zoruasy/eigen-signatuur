@@ -1,0 +1,145 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #F6F5F2; /* Zachte beige-achtige achtergrond */
+    color: #8b5c45; /* Bruine tekstkleur */
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #F0EBE3; /* Lichte crème kleur voor de header */
+    padding: 50px 20px;
+    border-bottom: 4px solid #8b5c45; /* Bruine rand onder de header */
+    text-shadow: 2px 2px 8px rgba(139, 92, 69, 0.6);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #8b5c45; /* Bruine kleur voor de tekst */
+}
+
+/* Navbar Styling */
+nav {
+    background-color: rgba(243, 208, 215, 0.9); /* Semi-transparante roze tint voor de navigatiebalk */
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #8b5c45; /* Bruine kleur voor de links */
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #FFEFEF; /* Zeer lichte roze kleur bij hover */
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #F0EBE3; /* Zelfde als header */
+    color: #8b5c45;
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid #8b5c45;
+    margin-top: auto;
+}
+
+/* Section Styling */
+section {
+    margin: 40px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    background-color: #F3D0D7; /* Zachte roze kleur voor de inhoud */
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(139, 92, 69, 0.2);
+    text-align: left;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #8b5c45; /* Bruine kleur voor kopteksten */
+    text-shadow: 1px 1px 4px rgba(139, 92, 69, 0.6);
+}
+
+/* Image Links */
+.image-links a {
+    display: inline-block;
+    margin: 20px;
+}
+
+.image-links img {
+    image-rendering: pixelated;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #8b5c45; /* Bruine rand */
+    box-shadow: 4px 4px 8px rgba(139, 92, 69, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.image-links img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #F0EBE3; /* Zelfde als header */
+    color: #8b5c45;
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid #8b5c45;
+    margin-top: auto;
+}
+
+
+/* Container voor de gifs */
+.gif-container {
+    display: flex;
+    justify-content: center; /* Horizontaal centreren */
+    align-items: center; /* Verticaal centreren */
+    flex-wrap: wrap; /* Zorg ervoor dat de GIFs op meerdere regels kunnen vallen als dat nodig is */
+    gap: 20px; /* Voeg wat ruimte tussen de GIFs toe */
+    width: 100%; /* Zorg ervoor dat de container de volledige breedte heeft */
+    margin: 0 auto;
+    
+}
+
+/* Styling voor de GIFs */
+.styled-gif { 
+    height: 200px; /* Alle GIFs krijgen dezelfde hoogte */
+    width: auto; /* De breedte wordt automatisch aangepast om de verhoudingen te behouden */
+    object-fit: contain; /* Zorg ervoor dat de GIFs goed binnen hun container passen */
+    border-radius: 8px; /* Ronde hoeken voor de GIF */
+    box-shadow: 0 5px 10px rgba(139, 92, 69, 0.3); /* Zachte schaduw rondom de GIF */
+    transition: transform 0.3s ease-in-out; /* Voeg een overgangseffect toe */
+}
+
+/* Vergroten van de GIFs bij hover */
+.styled-gif:hover {
+    transform: scale(1.05); /* Vergroot de GIF lichtjes als je er met de muis overheen gaat */
+}
